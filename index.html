@@ -77,12 +77,15 @@
         <datalist id="city-list">
             <option value="Toronto">
             <option value="Vancouver">
-            <!-- Add more common Canadian cities here -->
+            <option value="Calgary">
+              <option value="Hailfax">
+                <!-- Add more common Canadian cities here -->
         </datalist>
 
         <label for="postal-code">Postal Code:</label>
-        <input type="text" id="postal-code" name="postal-code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
-        <small>Format: A1A 1A1</small>
+<input type="text" id="postal-code" name="postal-code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required>
+
+
 
         <label>What is this about?</label>
         <input type="radio" name="topic" value="Question" required> Question
