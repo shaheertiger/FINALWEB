@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #355c7d; /* THIRD color */
+    color: #212121; /* Primary text */
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 95%;
+}
+
+/* Section Box Style */
+.section-box {
+    border: 3px solid #a2d5f2; /* SECOND color */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Top Section */
+#top-section {
+    background-color: #07689f; /* FIRST color */
+    color: #ffffff; /* Text / Icons */
+    text-align: center;
+}
+
+#top-section.section-box {
+    background-color: #07689f; /* FIRST color */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+#top-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#top-section h1 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+#top-section a {
+    background-color: #ff7e67; /* FOURTH color */
+    color: #ffffff; /* Text / Icons */
+    border: 2px solid #ffffff; /* Text / Icons */
+    border-radius: 25px;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+}
+
+#top-section a:hover {
+    background-color: #a2d5f2; /* SECOND color */
+    transform: translateY(-2px);
+}
+
+/* Infographic Section */
+#infographic-section {
+    background-color: #a2d5f2; /* SECOND color */
+    color: #212121; /* Primary text */
+    border-top: 3px solid #07689f; /* FIRST color */
+    border-bottom: 3px solid #07689f; /* FIRST color */
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#infographic-section h2 {
+    font-size: 24px;
+    margin: 20px;
+    color: #ffffff; /* Text / Icons */
+    font-weight: bold;
+}
+
+#infographic-section p {
+    font-size: 16px;
+    margin: 10px;
+    color: #212121; /* Primary text */
+    flex-basis: calc(33% - 20px); /* Three columns */
+    text-align: left;
+}
+
+#infographic-section p:last-child {
+    font-style: italic;
+    flex-basis: 100%;
+}
+
+/* Education Section */
+#education-section {
+    background-color: #07689f; /* FIRST color */
+    color: #ffffff; /* Text / Icons */
+    padding: 20px;
+}
+
+.education-detail {
+    background-color: #fafafa; /* THIRD color */
+    color: #212121; /* Primary text */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+/* Contact Me Section */
+#contact-me {
+    background-color: #a2d5f2;
+    color: #212121;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-me input[type="text"],
+#contact-me input[type="email"] {
+    width: 150px; /* Adjust the width to reduce the length of input fields */
+    padding: 8px; /* Keep the padding as desired */
+    margin: 5px 0; /* Adjust the margin for spacing */
+    font-size: 14px; /* Keep the font size as desired */
+    border: none;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #212121;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+#contact-me button {
+    width: 100%; /* Full width for the button */
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7e67;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+/* Hover effect for buttons */
+#contact-me button:hover {
+    background-color: #a2d5f2;
+    transform: translateY(-2px);
+}
+
+
+
+#infographic-section {
+    display: flex; /* Enable flexbox for columns */
+    flex-wrap: wrap;
+}
+
+.infographic-col {
+    flex: 1; /* Equal width for both columns */
+    padding: 20px; /* Padding around the content */
+}
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    .section-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #top-section img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #top-section h1 {
+        font-size: 20px;
+    }
+
+    #top-section a {
+        padding: 10px 20px;
+    }
+
+    #contact-me input[type="text"],
+    #contact-me input[type="email"],
+    #contact-me button {
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section-box {
+        margin: 10px 0;
+    }
+
+    #top-section img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #top-section h1 {
+        font-size: 18px;
+    }
+
+    #top-section a {
+        padding: 8px 16px;
+    }
+
+    #contact-me input[type="text"],
+    #contact-me input[type="email"],
+    #contact-me button {
+        padding: 6px;
+    }
+}
+
+/* Larger screens */
+@media only screen and (min-width: 1025px) {
+    #contact-me input[type="text"],
+    #contact-me input[type="email"],
+    #contact-me button {
+        max-width: 400px; /* Adjust the max-width as needed */
+    }
+}
