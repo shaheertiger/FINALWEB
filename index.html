@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- JavaScript File -->
   <script src="script.js"></script>
 
+  <!-- Meta Tags for Encoding and Viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Page Title -->
     <title>Your Portfolio</title>
 </head>
 <body>
   <div class="container">
-    <!-- Top Section -->
+    <!-- Top Section with Profile Info -->
     <section id="top-section" class="section-box">
         <img src="assets/images.jpg" alt="Profile Image">
         <h1>Data Analyst</h1>
@@ -19,98 +27,100 @@
         <a href="#contact-me">Contact Me</a>
     </section>
 
-   <!-- Infographic Section -->
-<section id="infographic-section" class="section-box">
-  <div class="infographic-col">
-    <strong><p>Name :</strong>Shaheer Ali Khan</p>
+    <!-- Infographic Section with Personal and Course Details -->
+    <section id="infographic-section" class="section-box">
+      <div class="infographic-col">
+        <!-- Personal Information -->
+        <strong><p>Name :</strong>Shaheer Ali Khan</p>
+        <strong><p>Date:</strong>08/18/2023</p>
+        <strong><p>Course:</strong>Computer Programming Analysis</p>
+        <strong><p>Section:</strong>NCC</p>
+        <strong><p>Professor:</strong>Mark Merrit</p>
+      </div>
+      <div class="infographic-col">
+        <!-- Academic Integrity Statement -->
+        <h1><p>Academic Integrity :</strong></h1>
+        <p>Seneca upholds a learning community that values academic integrity, honesty, fairness, trust, respect, responsibility and courage. 
+        These values enhance Seneca’s commitment to students by delivering high-quality education and teaching excellence, while supporting a positive learning environment.</p>
+      </div>
+    </section>
 
-      <strong>  <p>Date:</strong>08/18/2023</p>
-
-        <strong>  <p>Course:</strong>Computer Programming Analysis</p>
-
-          <strong>  <p>Section:</strong>NCC</p>
-
-            <strong>  <p>Professor:</strong>Mark Merrit</p>
-
-  </div>
-  <div class="infographic-col">
-    <h1><p>Academic Intergrity :</strong></h1>
-      <p>Seneca upholds a learning community that values academic integrity, honesty, fairness, trust, respect, responsibility and courage. 
-      These values enhance Seneca’s commitment to students by delivering high-quality education and teaching excellence, while supporting a positive learning environment. </p>
-  </div>
-</section>
-
-
-
-    <!-- Education Section -->
+    <!-- Education Section with Degree Details -->
     <section id="education-section" class="section-box">
       <!-- First Education Detail -->
       <div class="education-detail">
-          <h3>Bachelor's Degree</h3>
-          <p>2021 - 2022</p>
-          <p>Seneca College</p>
-          <p>Major in Computer Science.</p>
+        <h3>Bachelor's Degree</h3>
+        <p>2021 - 2022</p>
+        <p>Seneca College</p>
+        <p>Major in Computer Science.</p>
       </div>
-  
+
       <!-- Second Education Detail -->
       <div class="education-detail">
-          <h3>Master's Degree</h3>
-          <p>2022 - 2023</p>
-          <p>York University</p>
-          <p>Major Cyber Security.</p>
+        <h3>Master's Degree</h3>
+        <p>2022 - 2023</p>
+        <p>York University</p>
+        <p>Major Cyber Security.</p>
       </div>
-  </section>
-    <!-- Contact Me Section -->
+    </section>
+
+    <!-- Contact Me Section with Form -->
     <section id="contact-me" class="section-box">
       <form id="contact-form" action="https://httpbin.org/post" method="POST">
-        
+        <!-- Name Field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
+        <!-- Email Field -->
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
 
+        <!-- Phone Number Field -->
         <label for="phone-number">Phone Number:</label>
         <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
+        <!-- Address Field -->
         <label for="address">Address:</label>
         <input type="text" id="address" name="address" required>
 
+        <!-- City Field with Datalist -->
         <label for="city">City:</label>
         <input type="text" id="city" name="city" required list="city-list">
         <datalist id="city-list">
-            <option value="Toronto">
-            <option value="Vancouver">
-            <option value="Calgary">
-              <option value="Hailfax">
-                <!-- Add more common Canadian cities here -->
+          <option value="Toronto">
+          <option value="Vancouver">
+          <option value="Calgary">
+          <option value="Halifax">
+            <!-- Add more common Canadian cities here -->
         </datalist>
 
+        <!-- Postal Code Field -->
         <label for="postal-code">Postal Code:</label>
-<input type="text" id="postal-code" name="postal-code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required>
+        <input type="text" id="postal-code" name="postal-code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required>
 
-
-
+        <!-- Radio Button Options -->
         <label>What is this about?</label>
         <input type="radio" name="topic" value="Question" required> Question
         <input type="radio" name="topic" value="Comment" required> Comment
         <input type="radio" name="topic" value="Hiring" required> Hiring
 
+        <!-- Optional Hourly Rate Input -->
         <div id="hourly-rate-container" style="display: none;">
-            <label for="hourly-rate">Hourly Rate:</label>
-            <input type="number" id="hourly-rate" name="hourly-rate" step="0.01">
+          <label for="hourly-rate">Hourly Rate:</label>
+          <input type="number" id="hourly-rate" name="hourly-rate" step="0.01">
         </div>
 
+        <!-- Message Textarea -->
         <label for="message">Message:</label><br> 
         <textarea id="message" name="message" rows="3" cols="30" required></textarea>
-        
 
-
+        <!-- Other Input Field -->
         <label for="other-input">Other Input:</label>
         <input type="text" id="other-input" name="other-input">
 
+        <!-- Submit Button -->
         <button type="submit">Submit</button>
-    </form>
+      </form>
     </section>
   </div>
 </body>
